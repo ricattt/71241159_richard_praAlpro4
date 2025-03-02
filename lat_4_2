@@ -1,0 +1,4 @@
+suhu = int(input("Masukkan suhu tubuh: "))
+
+hasil = "Positif" if suhu > 0 else "Negatif" if suhu < 0 else "Nol"
+print(hasil)
