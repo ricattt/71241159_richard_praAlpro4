@@ -1,0 +1,22 @@
+angka1 = input("Masukkan angka pertama: ")
+angka2 = input("Masukkan angka kedua: ")
+angka3 = input("Masukkan angka ketiga: ")
+
+try: 
+    angka1 = int(angka1)
+    angka2 = int(angka2)
+    angka3 = int(angka3)
+
+    if angka1 % 10 == angka2 % 10 == angka3 % 10:
+        print("3 angka sama")
+    elif angka1 % 10 == angka2 % 10:
+        print("2 angka sama")
+    elif angka2 % 10 == angka3 % 10:
+        print("2 angka sama")
+    elif angka1 % 10 == angka3 % 10:
+        print("2 angka sama")
+    else:
+        print("Tidak ada yg sama")
+
+except:
+    print("Harap masukkan angka!!")
