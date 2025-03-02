@@ -1,0 +1,11 @@
+bulan = input("Masukkan bulan (1-12): ")
+
+try:
+    bulan = int(bulan)
+    if 1 <= bulan <= 12:
+        hari_per_bulan = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
+        print (f"{hari_per_bulan[bulan - 1]} Hari")
+    else:
+        print("Jangan lebih dari 12")
+except:
+    print("Masukkin dalam bentuk integer")
